@@ -55,7 +55,23 @@
 
 @end
 
+@interface LCFInfiniteScrollViewItem ()
+
+@property (nonatomic, copy, readwrite) NSString *imageURL;
+@property (nonatomic, copy, readwrite) NSString *imageText;
+
+@end
+
 @implementation LCFInfiniteScrollViewItem
+
+- (instancetype)initWithImageURL:(NSString *)imageURL imageText:(NSString *)imageText {
+    self = [super init];
+    if (self) {
+        self.imageURL  = imageURL;
+        self.imageText = imageText;
+    }
+    return self;
+}
 
 @end
 
@@ -228,9 +244,10 @@
     
     LCFInfiniteScrollViewItem *item = self.items[indexPath.row];
     
-    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:item.imageURL]
-                      placeholderImage:[HexRGB(colorI6) color2ImageSized:cell.frame.size]];
-    cell.label.text = item.text;
+    UIImage *placeholderImage = LCFImageFromColor([UIColor colorWithRed:237 / 255.0 green:237 / 255.0 blue:237 / 255.0 alpha:1], cell.frame.size);
+    
+    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:item.imageURL] placeholderImage:placeholderImage];
+    cell.label.text = item.imageText;
     
     return cell;
 }
@@ -257,6 +274,22 @@
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
     [self setUpTimer];
+}
+
+#pragma mark - Helper function
+
+static UIImage *LCFImageFromColor(UIColor *color, CGSize size) {
+    CGRect rect = CGRectMake(0, 0, size.width, size.height);
+    UIGraphicsBeginImageContext(rect.size);
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, color.CGColor);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
 }
 
 @end

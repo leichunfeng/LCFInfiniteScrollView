@@ -14,9 +14,11 @@
 		246BE72C1CC1E21F00AB525A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246BE72A1CC1E21F00AB525A /* LaunchScreen.storyboard */; };
 		246BE7351CC1E38C00AB525A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BE7341CC1E38C00AB525A /* TableViewController.m */; };
 		246BE73A1CC1E82E00AB525A /* LCFInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BE7391CC1E82E00AB525A /* LCFInfiniteScrollView.m */; };
+		945A8579A4009C8B4C942B07 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09676694FBED2ED869DCC11F /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09676694FBED2ED869DCC11F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		246BE7191CC1E21F00AB525A /* LCFInfiniteScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCFInfiniteScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		246BE71D1CC1E21F00AB525A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		246BE71F1CC1E21F00AB525A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 		246BE7341CC1E38C00AB525A /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		246BE7381CC1E82E00AB525A /* LCFInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCFInfiniteScrollView.h; sourceTree = "<group>"; };
 		246BE7391CC1E82E00AB525A /* LCFInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCFInfiniteScrollView.m; sourceTree = "<group>"; };
+		834387EC7E6397C2C5168780 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FD20D6A7B89EA6C36AEFF175 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945A8579A4009C8B4C942B07 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,8 @@
 			children = (
 				246BE71B1CC1E21F00AB525A /* LCFInfiniteScrollView */,
 				246BE71A1CC1E21F00AB525A /* Products */,
+				3BD3132556DDDCB58A90566D /* Pods */,
+				2A02AF06690AEA0504B94095 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +99,23 @@
 			path = LCFInfiniteScrollView;
 			sourceTree = "<group>";
 		};
+		2A02AF06690AEA0504B94095 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09676694FBED2ED869DCC11F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BD3132556DDDCB58A90566D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				834387EC7E6397C2C5168780 /* Pods.debug.xcconfig */,
+				FD20D6A7B89EA6C36AEFF175 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 246BE7301CC1E21F00AB525A /* Build configuration list for PBXNativeTarget "LCFInfiniteScrollView" */;
 			buildPhases = (
+				DB6CEA925BB573A606C0E80F /* Check Pods Manifest.lock */,
 				246BE7151CC1E21F00AB525A /* Sources */,
 				246BE7161CC1E21F00AB525A /* Frameworks */,
 				246BE7171CC1E21F00AB525A /* Resources */,
+				911476F39CF2969FC0EA593D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,6 +182,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		911476F39CF2969FC0EA593D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB6CEA925BB573A606C0E80F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		246BE7151CC1E21F00AB525A /* Sources */ = {
@@ -277,6 +336,7 @@
 		};
 		246BE7311CC1E21F00AB525A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 834387EC7E6397C2C5168780 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LCFInfiniteScrollView/Info.plist;
@@ -288,6 +348,7 @@
 		};
 		246BE7321CC1E21F00AB525A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD20D6A7B89EA6C36AEFF175 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LCFInfiniteScrollView/Info.plist;
@@ -316,6 +377,7 @@
 				246BE7321CC1E21F00AB525A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
