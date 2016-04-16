@@ -21,4 +21,6 @@
 
 @property (nonatomic, strong) UIImage *placeholderImage;
 
+@property (nonatomic, copy) void (^didSelectItemAtIndex)(NSUInteger index);
+
 @end

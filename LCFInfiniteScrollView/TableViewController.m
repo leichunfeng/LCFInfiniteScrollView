@@ -38,6 +38,10 @@
     
     UIColor *color = [UIColor colorWithRed:237 / 255.0 green:237 / 255.0 blue:237 / 255.0 alpha:1];
     self.infiniteScrollView.placeholderImage = [color lcf_imageSized:self.itemSize];
+    
+    self.infiniteScrollView.didSelectItemAtIndex = ^(NSUInteger index) {
+        NSLog(@"didSelectItemAtIndex: %@", @(index));
+    };
 
     self.infiniteScrollView.items = self.items;
 }
