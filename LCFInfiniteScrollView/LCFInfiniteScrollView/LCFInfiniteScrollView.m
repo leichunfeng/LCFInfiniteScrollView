@@ -64,6 +64,9 @@
     self.itemSize = self.frame.size;
     self.itemSpacing = 0;
     
+    _autoscroll = YES;
+    _timeInterval = 5;
+    
     [self setUpTimer];
 }
 
@@ -98,14 +101,29 @@
     self.collectionViewLayout.minimumLineSpacing = itemSpacing;
 }
 
+- (void)setAutoscroll:(BOOL)autoscroll {
+    _autoscroll = autoscroll;
+    [self setUpTimer];
+}
+
+- (void)setTimeInterval:(NSTimeInterval)timeInterval {
+    _timeInterval = timeInterval;
+    [self setUpTimer];
+}
+
 #pragma mark - Timer
 
 - (void)setUpTimer {
-    self.timer = [NSTimer timerWithTimeInterval:3
+    [self tearDownTimer];
+
+    if (!self.autoscroll) return;
+    
+    self.timer = [NSTimer timerWithTimeInterval:self.timeInterval
                                          target:self
                                        selector:@selector(timerFire:)
                                        userInfo:nil
                                         repeats:YES];
+    
     [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
 
@@ -116,6 +134,7 @@
 - (void)timerFire:(NSTimer *)timer {
     CGFloat currentOffset = self.collectionView.contentOffset.x;
     CGFloat targetOffset  = currentOffset + self.itemSize.width + self.itemSpacing;
+    
     [self.collectionView setContentOffset:CGPointMake(targetOffset, self.collectionView.contentOffset.y) animated:YES];
 }
 

@@ -16,4 +16,7 @@
 @property (nonatomic, assign) CGSize itemSize;
 @property (nonatomic, assign) CGFloat itemSpacing;
 
+@property (nonatomic, assign) BOOL autoscroll;
+@property (nonatomic, assign) NSTimeInterval timeInterval;
+
 @end

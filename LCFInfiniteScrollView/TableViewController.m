@@ -31,6 +31,9 @@
 
     self.infiniteScrollView.itemSize = self.itemSize;
     self.infiniteScrollView.itemSpacing = self.itemSpacing;
+    
+    self.infiniteScrollView.autoscroll = YES;
+    self.infiniteScrollView.timeInterval = 1.5;
 
     self.infiniteScrollView.items = self.items;
 }
