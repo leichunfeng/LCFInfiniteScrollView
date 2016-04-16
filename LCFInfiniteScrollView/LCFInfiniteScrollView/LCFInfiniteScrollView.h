@@ -7,26 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@class LCFInfiniteScrollView;
-
-@interface LCFInfiniteScrollViewItem : NSObject
-
-@property (nonatomic, copy, readonly) NSString *imageURL;
-@property (nonatomic, copy, readonly) NSString *imageText;
-
-- (instancetype)initWithImageURL:(NSString *)imageURL imageText:(NSString *)imageText;
-
-@end
-
-@protocol LCFInfiniteScrollViewDelegate <NSObject>
-
-@end
+#import "LCFInfiniteScrollViewItem.h"
 
 @interface LCFInfiniteScrollView : UIView
 
 @property (nonatomic, copy) NSArray<LCFInfiniteScrollViewItem *> *items;
-@property (nonatomic, weak) id<LCFInfiniteScrollViewDelegate> delegate;
 
 @property (nonatomic, assign) CGSize itemSize;
 @property (nonatomic, assign) CGFloat itemSpacing;

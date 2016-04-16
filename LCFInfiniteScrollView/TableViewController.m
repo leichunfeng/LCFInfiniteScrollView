@@ -10,10 +10,6 @@
 #import "LCFInfiniteScrollView.h"
 #import "SDVersion.h"
 
-@interface TableViewController ()
-
-@end
-
 @implementation TableViewController
 
 - (void)viewDidLoad {
@@ -25,7 +21,7 @@
     
     if ([SDVersion deviceSize] == Screen3Dot5inch ||
         [SDVersion deviceSize] == Screen4inch) {
-        itemSize = CGSizeMake(640.0 / 2, 260.0 / 2);
+        itemSize = CGSizeMake(320, 130);
         itemSpacing = 0;
         
         imageURLs = @[
@@ -37,7 +33,7 @@
             @"http://a4.mzstatic.com/us/r30/Features49/v4/db/53/76/db5376f7-ff1b-0c07-501b-8e3e78f3efaf/flowcase_640_260_2x.jpeg",
         ];
     } else if ([SDVersion deviceSize] == Screen4Dot7inch) {
-        itemSize = CGSizeMake(750.0 / 2, 304.0 / 2);
+        itemSize = CGSizeMake(375, 152);
         itemSpacing = 0;
         
         imageURLs = @[
@@ -49,7 +45,7 @@
             @"http://a1.mzstatic.com/us/r30/Features49/v4/db/53/76/db5376f7-ff1b-0c07-501b-8e3e78f3efaf/flowcase_750_304_2x.jpeg",
         ];
     } else if ([SDVersion deviceSize] == Screen5Dot5inch) {
-        itemSize = CGSizeMake(796.0 / 3, 390.0 / 3);
+        itemSize = CGSizeMake(265.333, 130);
         itemSpacing = 5;
         
         imageURLs = @[
@@ -61,7 +57,7 @@
             @"http://a1.mzstatic.com/us/r30/Features49/v4/33/b8/0c/33b80c3e-3f8f-5c31-50a6-b5964a6324f7/flowcase_796_390_2x.jpeg",
         ];
     } else {
-        itemSize = CGSizeMake(1060.0 / 2, 520.0 / 2);
+        itemSize = CGSizeMake(530, 260);
         itemSpacing = 5;
         
         imageURLs = @[
@@ -77,7 +73,7 @@
     NSMutableArray<LCFInfiniteScrollViewItem *> *items = [[NSMutableArray alloc] init];
     
     for (NSString *imageURL in imageURLs) {
-        LCFInfiniteScrollViewItem *item = [[LCFInfiniteScrollViewItem alloc] initWithImageURL:imageURL imageText:nil];
+        LCFInfiniteScrollViewItem *item = [LCFInfiniteScrollViewItem itemWithImageURL:imageURL text:nil];
         [items addObject:item];
     }
 

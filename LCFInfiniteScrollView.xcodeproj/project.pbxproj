@@ -14,6 +14,10 @@
 		246BE72C1CC1E21F00AB525A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246BE72A1CC1E21F00AB525A /* LaunchScreen.storyboard */; };
 		246BE7351CC1E38C00AB525A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BE7341CC1E38C00AB525A /* TableViewController.m */; };
 		246BE73A1CC1E82E00AB525A /* LCFInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BE7391CC1E82E00AB525A /* LCFInfiniteScrollView.m */; };
+		246BE73D1CC1FFEB00AB525A /* LCFInfiniteScrollViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BE73C1CC1FFEB00AB525A /* LCFInfiniteScrollViewItem.m */; };
+		246BE7401CC2002200AB525A /* LCFCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BE73F1CC2002200AB525A /* LCFCollectionViewCell.m */; };
+		246BE7431CC2003200AB525A /* LCFCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BE7421CC2003200AB525A /* LCFCollectionViewFlowLayout.m */; };
+		246BE7461CC20A2100AB525A /* UIColor+LCFImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BE7451CC20A2100AB525A /* UIColor+LCFImageAdditions.m */; };
 		945A8579A4009C8B4C942B07 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09676694FBED2ED869DCC11F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +35,14 @@
 		246BE7341CC1E38C00AB525A /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		246BE7381CC1E82E00AB525A /* LCFInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCFInfiniteScrollView.h; sourceTree = "<group>"; };
 		246BE7391CC1E82E00AB525A /* LCFInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCFInfiniteScrollView.m; sourceTree = "<group>"; };
+		246BE73B1CC1FFEB00AB525A /* LCFInfiniteScrollViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCFInfiniteScrollViewItem.h; sourceTree = "<group>"; };
+		246BE73C1CC1FFEB00AB525A /* LCFInfiniteScrollViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCFInfiniteScrollViewItem.m; sourceTree = "<group>"; };
+		246BE73E1CC2002200AB525A /* LCFCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCFCollectionViewCell.h; sourceTree = "<group>"; };
+		246BE73F1CC2002200AB525A /* LCFCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCFCollectionViewCell.m; sourceTree = "<group>"; };
+		246BE7411CC2003200AB525A /* LCFCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCFCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		246BE7421CC2003200AB525A /* LCFCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCFCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		246BE7441CC20A2100AB525A /* UIColor+LCFImageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LCFImageAdditions.h"; sourceTree = "<group>"; };
+		246BE7451CC20A2100AB525A /* UIColor+LCFImageAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LCFImageAdditions.m"; sourceTree = "<group>"; };
 		834387EC7E6397C2C5168780 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FD20D6A7B89EA6C36AEFF175 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +107,14 @@
 			children = (
 				246BE7381CC1E82E00AB525A /* LCFInfiniteScrollView.h */,
 				246BE7391CC1E82E00AB525A /* LCFInfiniteScrollView.m */,
+				246BE73B1CC1FFEB00AB525A /* LCFInfiniteScrollViewItem.h */,
+				246BE73C1CC1FFEB00AB525A /* LCFInfiniteScrollViewItem.m */,
+				246BE73E1CC2002200AB525A /* LCFCollectionViewCell.h */,
+				246BE73F1CC2002200AB525A /* LCFCollectionViewCell.m */,
+				246BE7411CC2003200AB525A /* LCFCollectionViewFlowLayout.h */,
+				246BE7421CC2003200AB525A /* LCFCollectionViewFlowLayout.m */,
+				246BE7441CC20A2100AB525A /* UIColor+LCFImageAdditions.h */,
+				246BE7451CC20A2100AB525A /* UIColor+LCFImageAdditions.m */,
 			);
 			path = LCFInfiniteScrollView;
 			sourceTree = "<group>";
@@ -221,9 +241,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				246BE7401CC2002200AB525A /* LCFCollectionViewCell.m in Sources */,
 				246BE7211CC1E21F00AB525A /* AppDelegate.m in Sources */,
 				246BE71E1CC1E21F00AB525A /* main.m in Sources */,
 				246BE7351CC1E38C00AB525A /* TableViewController.m in Sources */,
+				246BE7431CC2003200AB525A /* LCFCollectionViewFlowLayout.m in Sources */,
+				246BE7461CC20A2100AB525A /* UIColor+LCFImageAdditions.m in Sources */,
+				246BE73D1CC1FFEB00AB525A /* LCFInfiniteScrollViewItem.m in Sources */,
 				246BE73A1CC1E82E00AB525A /* LCFInfiniteScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
