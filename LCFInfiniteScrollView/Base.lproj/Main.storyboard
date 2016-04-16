@@ -8,21 +8,13 @@
         <!--精品推荐-->
         <scene sceneID="yfy-E6-yyv">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SsO-uH-Qs0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="dvs-jj-cIo" customClass="TableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="cRk-3L-44p">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="cRk-3L-44p">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="acj-Vv-odo">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="acj-Vv-odo" id="lh3-42-L1g">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="dvs-jj-cIo" id="AyF-DE-37W"/>
                             <outlet property="delegate" destination="dvs-jj-cIo" id="OUL-6A-aHB"/>
@@ -30,7 +22,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="精品推荐" id="cVo-P5-MDu"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SsO-uH-Qs0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-461" y="262"/>
         </scene>
