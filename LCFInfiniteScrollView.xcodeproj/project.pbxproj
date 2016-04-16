@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		246BE71E1CC1E21F00AB525A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BE71D1CC1E21F00AB525A /* main.m */; };
 		246BE7211CC1E21F00AB525A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BE7201CC1E21F00AB525A /* AppDelegate.m */; };
-		246BE7241CC1E21F00AB525A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BE7231CC1E21F00AB525A /* ViewController.m */; };
 		246BE7271CC1E21F00AB525A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246BE7251CC1E21F00AB525A /* Main.storyboard */; };
 		246BE7291CC1E21F00AB525A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 246BE7281CC1E21F00AB525A /* Assets.xcassets */; };
 		246BE72C1CC1E21F00AB525A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246BE72A1CC1E21F00AB525A /* LaunchScreen.storyboard */; };
+		246BE7351CC1E38C00AB525A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BE7341CC1E38C00AB525A /* TableViewController.m */; };
+		246BE73A1CC1E82E00AB525A /* LCFInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BE7391CC1E82E00AB525A /* LCFInfiniteScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		246BE71D1CC1E21F00AB525A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		246BE71F1CC1E21F00AB525A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		246BE7201CC1E21F00AB525A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		246BE7221CC1E21F00AB525A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		246BE7231CC1E21F00AB525A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		246BE7261CC1E21F00AB525A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		246BE7281CC1E21F00AB525A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		246BE72B1CC1E21F00AB525A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		246BE72D1CC1E21F00AB525A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		246BE7331CC1E38C00AB525A /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		246BE7341CC1E38C00AB525A /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		246BE7381CC1E82E00AB525A /* LCFInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCFInfiniteScrollView.h; sourceTree = "<group>"; };
+		246BE7391CC1E82E00AB525A /* LCFInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCFInfiniteScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +61,11 @@
 		246BE71B1CC1E21F00AB525A /* LCFInfiniteScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				246BE7371CC1E81B00AB525A /* LCFInfiniteScrollView */,
 				246BE71F1CC1E21F00AB525A /* AppDelegate.h */,
 				246BE7201CC1E21F00AB525A /* AppDelegate.m */,
-				246BE7221CC1E21F00AB525A /* ViewController.h */,
-				246BE7231CC1E21F00AB525A /* ViewController.m */,
+				246BE7331CC1E38C00AB525A /* TableViewController.h */,
+				246BE7341CC1E38C00AB525A /* TableViewController.m */,
 				246BE7251CC1E21F00AB525A /* Main.storyboard */,
 				246BE7281CC1E21F00AB525A /* Assets.xcassets */,
 				246BE72A1CC1E21F00AB525A /* LaunchScreen.storyboard */,
@@ -77,6 +81,15 @@
 				246BE71D1CC1E21F00AB525A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		246BE7371CC1E81B00AB525A /* LCFInfiniteScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				246BE7381CC1E82E00AB525A /* LCFInfiniteScrollView.h */,
+				246BE7391CC1E82E00AB525A /* LCFInfiniteScrollView.m */,
+			);
+			path = LCFInfiniteScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				246BE7241CC1E21F00AB525A /* ViewController.m in Sources */,
 				246BE7211CC1E21F00AB525A /* AppDelegate.m in Sources */,
 				246BE71E1CC1E21F00AB525A /* main.m in Sources */,
+				246BE7351CC1E38C00AB525A /* TableViewController.m in Sources */,
+				246BE73A1CC1E82E00AB525A /* LCFInfiniteScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

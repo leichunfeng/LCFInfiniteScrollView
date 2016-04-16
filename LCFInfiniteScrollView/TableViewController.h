@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableViewController.h
 //  LCFInfiniteScrollView
 //
 //  Created by leichunfeng on 16/4/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TableViewController : UITableViewController
 
 @end
-
