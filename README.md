@@ -13,3 +13,7 @@ A Circular and Infinite Scroll View, Inspired by the App Store Banner View.
 # iPad
 
 ![iPad](GIF/iPad.gif "iPad")
+
+# License
+
+LCFInfiniteScrollView is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
