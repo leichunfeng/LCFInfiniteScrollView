@@ -9,6 +9,7 @@
 #import "TableViewController.h"
 #import "LCFInfiniteScrollView.h"
 #import "SDVersion.h"
+#import "UIColor+LCFImageAdditions.h"
 
 @interface TableViewController ()
 
@@ -34,6 +35,9 @@
     
     self.infiniteScrollView.autoscroll = YES;
     self.infiniteScrollView.timeInterval = 1.5;
+    
+    UIColor *color = [UIColor colorWithRed:237 / 255.0 green:237 / 255.0 blue:237 / 255.0 alpha:1];
+    self.infiniteScrollView.placeholderImage = [color lcf_imageSized:self.itemSize];
 
     self.infiniteScrollView.items = self.items;
 }

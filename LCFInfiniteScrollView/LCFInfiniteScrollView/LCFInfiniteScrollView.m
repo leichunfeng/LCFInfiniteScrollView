@@ -111,6 +111,14 @@
     [self setUpTimer];
 }
 
+- (UIImage *)placeholderImage {
+    if (!_placeholderImage) {
+        UIColor *color = [UIColor colorWithRed:237 / 255.0 green:237 / 255.0 blue:237 / 255.0 alpha:1];
+        _placeholderImage = [color lcf_imageSized:self.itemSize];
+    }
+    return _placeholderImage;
+}
+
 #pragma mark - Timer
 
 - (void)setUpTimer {
@@ -149,10 +157,7 @@
     
     LCFInfiniteScrollViewItem *item = self.items[indexPath.row];
     
-    UIColor *color = [UIColor colorWithRed:237 / 255.0 green:237 / 255.0 blue:237 / 255.0 alpha:1];
-    UIImage *placeholderImage = [color lcf_imageSized:cell.frame.size];
-    
-    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:item.imageURL] placeholderImage:placeholderImage];
+    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:item.imageURL] placeholderImage:self.placeholderImage];
     cell.label.text = item.text;
     
     return cell;

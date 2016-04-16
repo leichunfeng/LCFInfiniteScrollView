@@ -19,4 +19,6 @@
 @property (nonatomic, assign) BOOL autoscroll;
 @property (nonatomic, assign) NSTimeInterval timeInterval;
 
+@property (nonatomic, strong) UIImage *placeholderImage;
+
 @end
