@@ -1,5 +1,9 @@
 # LCFInfiniteScrollView
 
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/leichunfeng/LCFInfiniteScrollView/master/LICENSE)
+[![CocoaPods](https://img.shields.io/cocoapods/v/LCFInfiniteScrollView.svg)](http://cocoadocs.org/docsets/LCFInfiniteScrollView)
+[![CocoaPods](https://img.shields.io/cocoapods/p/LCFInfiniteScrollView.svg)](http://cocoadocs.org/docsets/LCFInfiniteScrollView)
+
 A Circular and Infinite Scroll View, Inspired by the App Store Banner View.
 
 # iPhone 6
