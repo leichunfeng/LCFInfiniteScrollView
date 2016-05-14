@@ -84,9 +84,11 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.collectionView reloadData];
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:items.count inSection:0]
-                                        atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally
-                                                animated:NO];
+            if (CGPointEqualToPoint(self.collectionView.contentOffset, CGPointZero)) {
+                [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:items.count inSection:0]
+                                            atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally
+                                                    animated:NO];
+            }
         });
     });
 }
