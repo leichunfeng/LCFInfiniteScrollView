@@ -88,6 +88,7 @@
                 [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:items.count inSection:0]
                                             atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally
                                                     animated:NO];
+                [self reportStatus];
             }
         });
     });
@@ -119,6 +120,17 @@
         _placeholderImage = [color lcf_imageSized:self.itemSize];
     }
     return _placeholderImage;
+}
+
+- (void)reportStatus {
+    CGPoint point = CGPointMake(CGRectGetMidX(self.collectionView.bounds), CGRectGetMidY(self.collectionView.bounds));
+    
+    NSIndexPath *indexPath = [self.collectionView indexPathForItemAtPoint:point];
+    indexPath = [NSIndexPath indexPathForItem:indexPath.row % (self.items.count / 3) inSection:indexPath.section];
+
+    if ([self.delegate respondsToSelector:@selector(infiniteScrollView:didDisplayItemAtIndexPath:)]) {
+        [self.delegate infiniteScrollView:self didDisplayItemAtIndexPath:indexPath];
+    }
 }
 
 #pragma mark - Timer
@@ -195,6 +207,14 @@
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
     [self setUpTimer];
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    [self reportStatus];
+}
+
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
+    [self reportStatus];
 }
 
 @end

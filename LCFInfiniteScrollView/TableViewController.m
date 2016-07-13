@@ -11,7 +11,7 @@
 #import "SDVersion.h"
 #import "UIColor+LCFImageAdditions.h"
 
-@interface TableViewController ()
+@interface TableViewController () <LCFInfiniteScrollViewDelegate>
 
 @property (nonatomic, strong) LCFInfiniteScrollView *infiniteScrollView;
 
@@ -42,6 +42,8 @@
     self.infiniteScrollView.didSelectItemAtIndex = ^(NSUInteger index) {
         NSLog(@"didSelectItemAtIndex: %@", @(index));
     };
+    
+    self.infiniteScrollView.delegate = self;
 
     self.infiniteScrollView.items = self.items;
 }
@@ -119,6 +121,12 @@
     }
 
     return items.copy;
+}
+
+#pragma mark - LCFInfiniteScrollViewDelegate
+
+- (void)infiniteScrollView:(LCFInfiniteScrollView *)infiniteScrollView didDisplayItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"%@", @(indexPath.row));
 }
 
 @end
