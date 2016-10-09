@@ -154,6 +154,7 @@
 }
 
 - (void)timerFire:(NSTimer *)timer {
+    if (self.items.count == 0) return;
     CGFloat currentOffset = self.collectionView.contentOffset.x;
     CGFloat targetOffset  = currentOffset + self.itemSize.width + self.itemSpacing;
     
