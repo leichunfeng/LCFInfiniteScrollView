@@ -169,6 +169,7 @@
 				TargetAttributes = {
 					246BE7181CC1E21F00AB525A = {
 						CreatedOnToolsVersion = 7.3;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -363,6 +364,7 @@
 			baseConfigurationReference = 834387EC7E6397C2C5168780 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LCFInfiniteScrollView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -376,6 +378,7 @@
 			baseConfigurationReference = FD20D6A7B89EA6C36AEFF175 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LCFInfiniteScrollView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
