@@ -182,7 +182,6 @@
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    NSLog(@"%zd", self.completeItems.count);
     return self.completeItems.count;
 }
 
@@ -197,8 +196,7 @@
         [cell.imageView sd_setImageWithURL:[NSURL URLWithString:item.imageURL] placeholderImage:self.placeholderImage];
     }
     
-//    cell.label.text = item.text;
-    cell.label.text = [NSString stringWithFormat:@"%zd", indexPath.row];
+    cell.label.text = item.text;
     
     return cell;
 }
