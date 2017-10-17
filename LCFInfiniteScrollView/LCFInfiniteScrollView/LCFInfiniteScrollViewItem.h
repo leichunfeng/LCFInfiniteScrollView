@@ -11,8 +11,10 @@
 @interface LCFInfiniteScrollViewItem : NSObject
 
 @property (nonatomic, copy, readonly) NSString *imageURL;
+@property (nonatomic, copy, readonly) NSString *imageName;
 @property (nonatomic, copy, readonly) NSString *text;
 
 + (instancetype)itemWithImageURL:(NSString *)imageURL text:(NSString *)text;
++ (instancetype)itemWithImageName:(NSString *)imageName text:(NSString *)text;
 
 @end

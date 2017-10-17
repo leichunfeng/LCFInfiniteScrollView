@@ -11,6 +11,7 @@
 @interface LCFInfiniteScrollViewItem ()
 
 @property (nonatomic, copy, readwrite) NSString *imageURL;
+@property (nonatomic, copy, readwrite) NSString *imageName;
 @property (nonatomic, copy, readwrite) NSString *text;
 
 @end
@@ -21,6 +22,15 @@
     LCFInfiniteScrollViewItem *item = [[LCFInfiniteScrollViewItem alloc] init];
     
     item.imageURL = imageURL;
+    item.text = text;
+    
+    return item;
+}
+
++ (instancetype)itemWithImageName:(NSString *)imageName text:(NSString *)text {
+    LCFInfiniteScrollViewItem *item = [[LCFInfiniteScrollViewItem alloc] init];
+    
+    item.imageName = imageName;
     item.text = text;
     
     return item;
