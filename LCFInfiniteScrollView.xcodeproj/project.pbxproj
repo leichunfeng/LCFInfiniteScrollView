@@ -18,11 +18,10 @@
 		246BE7401CC2002200AB525A /* LCFCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BE73F1CC2002200AB525A /* LCFCollectionViewCell.m */; };
 		246BE7431CC2003200AB525A /* LCFCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BE7421CC2003200AB525A /* LCFCollectionViewFlowLayout.m */; };
 		246BE7461CC20A2100AB525A /* UIColor+LCFImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BE7451CC20A2100AB525A /* UIColor+LCFImageAdditions.m */; };
-		945A8579A4009C8B4C942B07 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09676694FBED2ED869DCC11F /* libPods.a */; };
+		8A2D22491FC075209FD8C1D1 /* libPods-LCFInfiniteScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C965C0B9CD16714B00B17C79 /* libPods-LCFInfiniteScrollView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		09676694FBED2ED869DCC11F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		246BE7191CC1E21F00AB525A /* LCFInfiniteScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCFInfiniteScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		246BE71D1CC1E21F00AB525A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		246BE71F1CC1E21F00AB525A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,8 +42,9 @@
 		246BE7421CC2003200AB525A /* LCFCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCFCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		246BE7441CC20A2100AB525A /* UIColor+LCFImageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LCFImageAdditions.h"; sourceTree = "<group>"; };
 		246BE7451CC20A2100AB525A /* UIColor+LCFImageAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LCFImageAdditions.m"; sourceTree = "<group>"; };
-		834387EC7E6397C2C5168780 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		FD20D6A7B89EA6C36AEFF175 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		62570C6F497D53B5FEB85E32 /* Pods-LCFInfiniteScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCFInfiniteScrollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-LCFInfiniteScrollView/Pods-LCFInfiniteScrollView.release.xcconfig"; sourceTree = "<group>"; };
+		C461C17CCE89CC823AFA800B /* Pods-LCFInfiniteScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCFInfiniteScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LCFInfiniteScrollView/Pods-LCFInfiniteScrollView.debug.xcconfig"; sourceTree = "<group>"; };
+		C965C0B9CD16714B00B17C79 /* libPods-LCFInfiniteScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LCFInfiniteScrollView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				945A8579A4009C8B4C942B07 /* libPods.a in Frameworks */,
+				8A2D22491FC075209FD8C1D1 /* libPods-LCFInfiniteScrollView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,8 +64,8 @@
 			children = (
 				246BE71B1CC1E21F00AB525A /* LCFInfiniteScrollView */,
 				246BE71A1CC1E21F00AB525A /* Products */,
-				3BD3132556DDDCB58A90566D /* Pods */,
-				2A02AF06690AEA0504B94095 /* Frameworks */,
+				D868AE3963A7C465F11558AD /* Pods */,
+				B6FF413C948738DC1ECCACC8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,19 +119,19 @@
 			path = LCFInfiniteScrollView;
 			sourceTree = "<group>";
 		};
-		2A02AF06690AEA0504B94095 /* Frameworks */ = {
+		B6FF413C948738DC1ECCACC8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				09676694FBED2ED869DCC11F /* libPods.a */,
+				C965C0B9CD16714B00B17C79 /* libPods-LCFInfiniteScrollView.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3BD3132556DDDCB58A90566D /* Pods */ = {
+		D868AE3963A7C465F11558AD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				834387EC7E6397C2C5168780 /* Pods.debug.xcconfig */,
-				FD20D6A7B89EA6C36AEFF175 /* Pods.release.xcconfig */,
+				C461C17CCE89CC823AFA800B /* Pods-LCFInfiniteScrollView.debug.xcconfig */,
+				62570C6F497D53B5FEB85E32 /* Pods-LCFInfiniteScrollView.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -143,11 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 246BE7301CC1E21F00AB525A /* Build configuration list for PBXNativeTarget "LCFInfiniteScrollView" */;
 			buildPhases = (
-				DB6CEA925BB573A606C0E80F /* Check Pods Manifest.lock */,
+				4EEC2A31156A3999801CC630 /* [CP] Check Pods Manifest.lock */,
 				246BE7151CC1E21F00AB525A /* Sources */,
 				246BE7161CC1E21F00AB525A /* Frameworks */,
 				246BE7171CC1E21F00AB525A /* Resources */,
-				911476F39CF2969FC0EA593D /* Copy Pods Resources */,
+				3A237C978EB56A8167C6D6E1 /* [CP] Embed Pods Frameworks */,
+				ABFDF52B0EC4F275CBF975B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,34 +206,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		911476F39CF2969FC0EA593D /* Copy Pods Resources */ = {
+		3A237C978EB56A8167C6D6E1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LCFInfiniteScrollView/Pods-LCFInfiniteScrollView-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DB6CEA925BB573A606C0E80F /* Check Pods Manifest.lock */ = {
+		4EEC2A31156A3999801CC630 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LCFInfiniteScrollView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABFDF52B0EC4F275CBF975B8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LCFInfiniteScrollView/Pods-LCFInfiniteScrollView-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -361,7 +380,7 @@
 		};
 		246BE7311CC1E21F00AB525A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 834387EC7E6397C2C5168780 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = C461C17CCE89CC823AFA800B /* Pods-LCFInfiniteScrollView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -375,7 +394,7 @@
 		};
 		246BE7321CC1E21F00AB525A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD20D6A7B89EA6C36AEFF175 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 62570C6F497D53B5FEB85E32 /* Pods-LCFInfiniteScrollView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
