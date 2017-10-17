@@ -78,38 +78,38 @@
     if ([SDVersion deviceSize] == Screen3Dot5inch || [SDVersion deviceSize] == Screen4inch) {
         imageURLs = @[
             @"http://a4.mzstatic.com/us/r30/Features49/v4/77/73/3b/77733b19-2fb6-be1a-6a5e-8e01c30d2c94/flowcase_640_260_2x.jpeg",
-            @"http://a3.mzstatic.com/us/r30/Features49/v4/93/31/d4/9331d426-4596-51f4-8acd-5b0aba8c1692/flowcase_640_260_2x.jpeg",
-            @"http://a1.mzstatic.com/us/r30/Features49/v4/2f/7e/1c/2f7e1c3a-0431-bfc6-13fc-fe77f3a2fcef/flowcase_640_260_2x.jpeg",
-            @"http://a2.mzstatic.com/us/r30/Features69/v4/09/83/bf/0983bfcf-52e2-8e16-5541-7cd7e3a10c9e/flowcase_640_260_2x.jpeg",
-            @"http://a2.mzstatic.com/us/r30/Features49/v4/33/b8/0c/33b80c3e-3f8f-5c31-50a6-b5964a6324f7/flowcase_640_260_2x.jpeg",
-            @"http://a4.mzstatic.com/us/r30/Features49/v4/db/53/76/db5376f7-ff1b-0c07-501b-8e3e78f3efaf/flowcase_640_260_2x.jpeg",
+//            @"http://a3.mzstatic.com/us/r30/Features49/v4/93/31/d4/9331d426-4596-51f4-8acd-5b0aba8c1692/flowcase_640_260_2x.jpeg",
+//            @"http://a1.mzstatic.com/us/r30/Features49/v4/2f/7e/1c/2f7e1c3a-0431-bfc6-13fc-fe77f3a2fcef/flowcase_640_260_2x.jpeg",
+//            @"http://a2.mzstatic.com/us/r30/Features69/v4/09/83/bf/0983bfcf-52e2-8e16-5541-7cd7e3a10c9e/flowcase_640_260_2x.jpeg",
+//            @"http://a2.mzstatic.com/us/r30/Features49/v4/33/b8/0c/33b80c3e-3f8f-5c31-50a6-b5964a6324f7/flowcase_640_260_2x.jpeg",
+//            @"http://a4.mzstatic.com/us/r30/Features49/v4/db/53/76/db5376f7-ff1b-0c07-501b-8e3e78f3efaf/flowcase_640_260_2x.jpeg",
         ];
     } else if ([SDVersion deviceSize] == Screen4Dot7inch) {
         imageURLs = @[
             @"http://a4.mzstatic.com/us/r30/Features49/v4/77/73/3b/77733b19-2fb6-be1a-6a5e-8e01c30d2c94/flowcase_750_304_2x.jpeg",
-            @"http://a5.mzstatic.com/us/r30/Features49/v4/93/31/d4/9331d426-4596-51f4-8acd-5b0aba8c1692/flowcase_750_304_2x.jpeg",
-            @"http://a3.mzstatic.com/us/r30/Features49/v4/2f/7e/1c/2f7e1c3a-0431-bfc6-13fc-fe77f3a2fcef/flowcase_750_304_2x.jpeg",
-            @"http://a4.mzstatic.com/us/r30/Features69/v4/09/83/bf/0983bfcf-52e2-8e16-5541-7cd7e3a10c9e/flowcase_750_304_2x.jpeg",
-            @"http://a4.mzstatic.com/us/r30/Features49/v4/33/b8/0c/33b80c3e-3f8f-5c31-50a6-b5964a6324f7/flowcase_750_304_2x.jpeg",
-            @"http://a1.mzstatic.com/us/r30/Features49/v4/db/53/76/db5376f7-ff1b-0c07-501b-8e3e78f3efaf/flowcase_750_304_2x.jpeg",
+//            @"http://a5.mzstatic.com/us/r30/Features49/v4/93/31/d4/9331d426-4596-51f4-8acd-5b0aba8c1692/flowcase_750_304_2x.jpeg",
+//            @"http://a3.mzstatic.com/us/r30/Features49/v4/2f/7e/1c/2f7e1c3a-0431-bfc6-13fc-fe77f3a2fcef/flowcase_750_304_2x.jpeg",
+//            @"http://a4.mzstatic.com/us/r30/Features69/v4/09/83/bf/0983bfcf-52e2-8e16-5541-7cd7e3a10c9e/flowcase_750_304_2x.jpeg",
+//            @"http://a4.mzstatic.com/us/r30/Features49/v4/33/b8/0c/33b80c3e-3f8f-5c31-50a6-b5964a6324f7/flowcase_750_304_2x.jpeg",
+//            @"http://a1.mzstatic.com/us/r30/Features49/v4/db/53/76/db5376f7-ff1b-0c07-501b-8e3e78f3efaf/flowcase_750_304_2x.jpeg",
         ];
     } else if ([SDVersion deviceSize] == Screen5Dot5inch) {
         imageURLs = @[
             @"http://a1.mzstatic.com/us/r30/Features49/v4/77/73/3b/77733b19-2fb6-be1a-6a5e-8e01c30d2c94/flowcase_796_390_2x.jpeg",
-            @"http://a2.mzstatic.com/us/r30/Features49/v4/93/31/d4/9331d426-4596-51f4-8acd-5b0aba8c1692/flowcase_796_390_2x.jpeg",
-            @"http://a5.mzstatic.com/us/r30/Features49/v4/2f/7e/1c/2f7e1c3a-0431-bfc6-13fc-fe77f3a2fcef/flowcase_796_390_2x.jpeg",
-            @"http://a1.mzstatic.com/us/r30/Features69/v4/09/83/bf/0983bfcf-52e2-8e16-5541-7cd7e3a10c9e/flowcase_796_390_2x.jpeg",
-            @"http://a1.mzstatic.com/us/r30/Features49/v4/33/b8/0c/33b80c3e-3f8f-5c31-50a6-b5964a6324f7/flowcase_796_390_2x.jpeg",
-            @"http://a3.mzstatic.com/us/r30/Features49/v4/db/53/76/db5376f7-ff1b-0c07-501b-8e3e78f3efaf/flowcase_796_390_2x.jpeg",
+//            @"http://a2.mzstatic.com/us/r30/Features49/v4/93/31/d4/9331d426-4596-51f4-8acd-5b0aba8c1692/flowcase_796_390_2x.jpeg",
+//            @"http://a5.mzstatic.com/us/r30/Features49/v4/2f/7e/1c/2f7e1c3a-0431-bfc6-13fc-fe77f3a2fcef/flowcase_796_390_2x.jpeg",
+//            @"http://a1.mzstatic.com/us/r30/Features69/v4/09/83/bf/0983bfcf-52e2-8e16-5541-7cd7e3a10c9e/flowcase_796_390_2x.jpeg",
+//            @"http://a1.mzstatic.com/us/r30/Features49/v4/33/b8/0c/33b80c3e-3f8f-5c31-50a6-b5964a6324f7/flowcase_796_390_2x.jpeg",
+//            @"http://a3.mzstatic.com/us/r30/Features49/v4/db/53/76/db5376f7-ff1b-0c07-501b-8e3e78f3efaf/flowcase_796_390_2x.jpeg",
         ];
     } else {
         imageURLs = @[
             @"http://a4.mzstatic.com/us/r30/Features49/v4/77/73/3b/77733b19-2fb6-be1a-6a5e-8e01c30d2c94/flowcase_1060_520_2x.jpeg",
-            @"http://a3.mzstatic.com/us/r30/Features49/v4/93/31/d4/9331d426-4596-51f4-8acd-5b0aba8c1692/flowcase_1060_520_2x.jpeg",
-            @"http://a5.mzstatic.com/us/r30/Features49/v4/2f/7e/1c/2f7e1c3a-0431-bfc6-13fc-fe77f3a2fcef/flowcase_1060_520_2x.jpeg",
-            @"http://a3.mzstatic.com/us/r30/Features49/v4/91/27/09/91270995-de9f-9afe-5b52-ab4f7ca1a37e/flowcase_1060_520_2x.jpeg",
-            @"http://a3.mzstatic.com/us/r30/Features49/v4/33/b8/0c/33b80c3e-3f8f-5c31-50a6-b5964a6324f7/flowcase_1060_520_2x.jpeg",
-            @"http://a5.mzstatic.com/us/r30/Features49/v4/db/53/76/db5376f7-ff1b-0c07-501b-8e3e78f3efaf/flowcase_1060_520_2x.jpeg",
+//            @"http://a3.mzstatic.com/us/r30/Features49/v4/93/31/d4/9331d426-4596-51f4-8acd-5b0aba8c1692/flowcase_1060_520_2x.jpeg",
+//            @"http://a5.mzstatic.com/us/r30/Features49/v4/2f/7e/1c/2f7e1c3a-0431-bfc6-13fc-fe77f3a2fcef/flowcase_1060_520_2x.jpeg",
+//            @"http://a3.mzstatic.com/us/r30/Features49/v4/91/27/09/91270995-de9f-9afe-5b52-ab4f7ca1a37e/flowcase_1060_520_2x.jpeg",
+//            @"http://a3.mzstatic.com/us/r30/Features49/v4/33/b8/0c/33b80c3e-3f8f-5c31-50a6-b5964a6324f7/flowcase_1060_520_2x.jpeg",
+//            @"http://a5.mzstatic.com/us/r30/Features49/v4/db/53/76/db5376f7-ff1b-0c07-501b-8e3e78f3efaf/flowcase_1060_520_2x.jpeg",
         ];
     }
 

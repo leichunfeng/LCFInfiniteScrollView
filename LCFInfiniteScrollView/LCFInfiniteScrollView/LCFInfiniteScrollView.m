@@ -86,7 +86,7 @@
     NSIndexPath *indexPath = [self.collectionView indexPathForItemAtPoint:point];
     if (indexPath == nil) return;
     
-    indexPath = [NSIndexPath indexPathForItem:indexPath.row % (self.completeItems.count / 3) inSection:indexPath.section];
+    indexPath = [NSIndexPath indexPathForItem:indexPath.row % self.items.count inSection:indexPath.section];
     
     if ([self.delegate respondsToSelector:@selector(infiniteScrollView:didDisplayItemAtIndexPath:)]) {
         [self.delegate infiniteScrollView:self didDisplayItemAtIndexPath:indexPath];
